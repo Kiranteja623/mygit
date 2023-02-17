@@ -1,0 +1,17 @@
+---
+pool:
+  name: Default
+trigger:
+  - main
+steps:
+  - script: echo $(Agent.BuildDirectory)
+  - script: echo $(Agent.HomeDirectory)
+  - script: echo $(Agent.TempDirectory)
+  - script: echo $(Build.ArtifactStagingDirectory)
+  - script: echo $(Build.BinariesDirectory)
+  - script: echo $(Build.Repository.LocalPath)
+  - script: echo $(Build.SourcesDirectory)
+  - script: echo $(Build.StagingDirectory)
+  - script: echo $(Common.TestResultsDirectory)
+  - script: echo $(Pipeline.Workspace)
+  - script: echo $(System.DefaultWorkingDirectory)
