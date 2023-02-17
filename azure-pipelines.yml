@@ -16,3 +16,4 @@ steps:
   - script: echo $(Pipeline.Workspace)
   - script: echo $(System.DefaultWorkingDirectory)
   - script: echo $(Build.Repository.LocalPath)
+  - script: echo $(Agent.WorkFolder)
